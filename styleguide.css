@@ -1,0 +1,68 @@
+:root {
+    --lilac: rgba(195, 167, 205, 1);
+    --wild-sand: rgba(243, 243, 243, 1);
+    --cornflower: rgba(154, 203, 225, 1);
+    --snuff: rgba(224, 209, 230, 1);
+    --sinbad: rgba(160, 208, 212, 1);
+    --creme: rgba(247, 243, 235, 1);
+    --title-font-family: "Malayalam MN", Helvetica;
+    --title-font-weight: 700;
+    --title-font-size: 48px;
+    --title-letter-spacing: 0px;
+    --title-line-height: normal;
+    --title-font-style: normal;
+    --body-font-family: "Montserrat", Helvetica;
+    --body-font-weight: 400;
+    --body-font-size: 24px;
+    --body-letter-spacing: 0px;
+    --body-line-height: 34px;
+    --body-font-style: normal;
+    --sub-titles-font-family: "Malayalam MN", Helvetica;
+    --sub-titles-font-weight: 700;
+    --sub-titles-font-size: 30px;
+    --sub-titles-letter-spacing: 0px;
+    --sub-titles-line-height: normal;
+    --sub-titles-font-style: normal;
+    --variable-collection-screenwidth: 1512px;
+    --variable-collection-padding: 80px;
+    --variable-collection-menulist: initial;
+    --variable-collection-menubuttons: initial;
+    --variable-collection-menuicon: none;
+    --variable-collection-color: rgba(224, 209, 230, 1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-variable-collection-mode="desktop">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-variable-collection-mode="desktop"] {
+    --variable-collection-screenwidth: 1512px;
+    --variable-collection-padding: 80px;
+    --variable-collection-menulist: initial;
+    --variable-collection-menubuttons: initial;
+    --variable-collection-menuicon: none;
+  }
+  
+  [data-variable-collection-mode="tablet"] {
+    --variable-collection-screenwidth: 744px;
+    --variable-collection-padding: 32px;
+    --variable-collection-menulist: initial;
+    --variable-collection-menubuttons: initial;
+    --variable-collection-menuicon: none;
+  }
+  
+  [data-variable-collection-mode="mobile"] {
+    --variable-collection-screenwidth: 393px;
+    --variable-collection-padding: 16px;
+    --variable-collection-menulist: none;
+    --variable-collection-menubuttons: none;
+    --variable-collection-menuicon: initial;
+  }
