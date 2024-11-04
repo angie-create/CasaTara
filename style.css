@@ -9,7 +9,7 @@
   align-items: center;
   height: 85px;
   padding: 5px 10px;
-  z-index: 2;
+  z-index: 3;
   opacity: 0.95;
 }
 
@@ -776,7 +776,7 @@ video {
   height: 716px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px #00000040;
-  z-index: 1;
+  z-index: 2;
 }
 
 .video-estudio {
@@ -787,7 +787,7 @@ video {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
+  z-index: 1;
 }
 
 .estilos-de-yoga .text-2 {
@@ -802,6 +802,7 @@ video {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
+  z-index: 2;
 }
 
 .estilos-de-yoga .logo {
@@ -811,6 +812,7 @@ video {
   top: 121px;
   left: 250px;
   object-fit: contain;
+  z-index: 1;
 }
 
 .estilos-de-yoga .div-wrapper {
@@ -822,13 +824,13 @@ video {
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
   background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
-  transition-property: color;
-  transition-duration: 0.25s;
-  z-index: 1;
+  transition-property: background;
+  transition-duration: 1s;
+  z-index: 2;
 }
 
-.div-wrapper:hover {
-  color: #A0D0D4;
+.estilos-de-yoga .div-wrapper:hover {
+  background: #A0D0D4;
 }
 
 .estilos-de-yoga .text-3 {
@@ -872,7 +874,30 @@ video {
   height: 620px;
   box-shadow: 0px 4px 4px #00000040;
   border-radius: 20px;
+  overflow: hidden;
 }
+
+.estilos-de-yoga .overlap-group-wrapper:after {
+  content: "Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum nostra quis pellentesque metus quisque nullam.";
+  border-radius: 20px;;
+  font-family: "Malayalam MN-Regular", Helvetica;
+  color: #f7f3eb;
+  margin: 20px;
+  padding: 20px 40px;
+  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: translatey(100%);
+  transition: 0.4s;
+  opacity: 90%;
+}
+
+.estilos-de-yoga .overlap-group-wrapper.overlap-group-wrapper:hover::after {
+  transform: translateY(0%);
+}
+
 
 .estilos-de-yoga .overlap-group {
   position: relative;
@@ -968,13 +993,13 @@ video {
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
   background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
-  transition-property: color;
-  transition-duration: 0.25s;
+  transition-property: background;
+  transition-duration: 1s;
   z-index: 1;
 }
 
 .boton-lila:hover {
-  color: #A0D0D4;
+  background: #A0D0D4;
 }
 
 
@@ -1156,13 +1181,13 @@ video {
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
   background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
-  transition-property: color;
-  transition-duration: 0.25s;
+  transition-property: background;
+  transition-duration: 1s;
   z-index: 1;
 }
 
 .boton-lila-2:hover {
-  color: #A0D0D4;
+  background: #A0D0D4;
 }
 
 
