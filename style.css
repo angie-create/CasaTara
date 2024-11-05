@@ -10,7 +10,7 @@
   height: 85px;
   padding: 5px 10px;
   z-index: 3;
-  opacity: 0.95;
+  opacity: 0.85;
 }
 
 .header .logo-2 {
@@ -37,6 +37,8 @@
   display: inline-block;
   padding: 0 20px;
   transition: all 0.3s;
+  opacity: 1;
+  
 }
 
 .header .frame-2 li:hover {
@@ -49,7 +51,7 @@
 
 .header .frame-2 li a{
   font-size: 800;
-  color: #F7F3EB;
+  color: #F3F3F3;
   text-decoration: none;
   font-family: "Malayalam MN-Regular";
   font-style: bold;
@@ -76,72 +78,78 @@ video {
 
 .home .overlap-group {
   position: relative;
-  width: 1512px;
+  width: 100%;
   height: 880px;
   z-index: 1;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home .boton-lila {
-  position: absolute;
   width: 600px;
   height: 85px;
-  top: 621px;
-  left: 455px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: var(--creme);
   transition-property: background;
   transition-duration: 1s;
+  z-index: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.boton-lila:hover {
-  background: #A0D0D4;
+.home .boton-lila:hover {
+  background: linear-gradient(180deg, gray 60%, gray 100%);
 }
 
 .home .text {
-  height: 43px;
-  top: 21px;
-  left: 50px;
+  height: 100%;
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Regular", Helvetica;
-  color: #f7f3eb;
+  color: gray ;
   font-size: 30px;
   line-height: normal;
-  position: absolute;
   font-weight: 400;
   text-align: center;
+  align-content: center;
   letter-spacing: 0;
+  z-index: 1;
+}
+
+.home .text:hover {
+  color: #f7f3eb;
 }
 
 
 .home .logo {
-  position: absolute;
+  position:relative;
   width: 824px;
   height: 241px;
-  top: 223px;
-  left: 343px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .home .intro-text {
-  position: absolute;
+  position: relative;
   width: 824px;
-  top: 384px;
-  left: 343px;
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
   color: var(--creme);
-  font-size: 64px;
+  font-size: 30px;
   text-align: center;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: 1;
 }
 
 /* Estilos de yoga */
 
 .home {
   position: relative;
-  width: 1512px;
+  width: 100%;
   height: 3808px;
   background-color: var(--creme);
   overflow: hidden;
@@ -149,7 +157,7 @@ video {
 
 .home .overlap {
   position: absolute;
-  width: 1514px;
+  width: 100%;
   height: 1495px;
   top: 119px;
   left: 0;
@@ -206,7 +214,7 @@ video {
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Bold", Helvetica;
   font-weight: 400;
-  color: var(--lilac);
+  color: gray;
   font-size: 50px;
   letter-spacing: 0;
   line-height: normal;
@@ -232,7 +240,7 @@ video {
   line-height: 34px;
 }
 
-.home .leer-ms {
+.home .leer-ms a{
   font-family: "Malayalam MN-Regular", Helvetica;
   position: relative;
   width: 144px;
@@ -241,7 +249,8 @@ video {
   transition-duration: 0.25s;
 }
 
-.leer-ms:hover {
+
+.leer-ms a:hover {
   color: rgba(195, 167, 205, 1); 
 }
 
@@ -250,7 +259,7 @@ video {
 
 .home .teacher {
   position: absolute;
-  width: 1512px;
+  width: 100%;
   height: 880px;
   top: 1722px;
   left: 0;
@@ -303,13 +312,13 @@ video {
   height: 62px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: var(--creme) ;
   transition-property: background;
   transition-duration: 1s;
 }
 
-.boton-lila-2:hover {
-  background: #A0D0D4;
+.home .boton-lila-2:hover {
+  background: linear-gradient(180deg, gray 60%, gray 100%);
 }
 
 .home .text-3 {
@@ -318,7 +327,7 @@ video {
   left: 51px;
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Regular", Helvetica;
-  color: #f7f3eb;
+  color: gray;
   font-size: 30px;
   line-height: normal;
   position: absolute;
@@ -327,13 +336,17 @@ video {
   letter-spacing: 0;
 }
 
+.home .text-3:hover {
+  color: #f7f3eb;
+}
+
 /* Reviews */
 
 .home .reviews-home {
   height: 548px;
   top: 109px;
   position: absolute;
-  width: 1507px;
+  width: 100%;
   left: 0;
   z-index: 1;
 }
@@ -346,7 +359,7 @@ video {
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
-  color: var(--lilac);
+  color: gray;
   font-size: 50px;
   text-align: center;
   letter-spacing: 0;
@@ -356,7 +369,7 @@ video {
 .home .text-wrapper-6 {
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
-  color: #c3a7cd;
+  color: gray;
   font-size: 50px;
   letter-spacing: 0;
 }
@@ -553,19 +566,19 @@ video {
   left: 495px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: linear-gradient(180deg, gray 60%, gray 100%);
   transition-property: background;
   transition-duration: 1s;
   z-index: 1;
 }
 
 .home .div-wrapper:hover {
-  background: #A0D0D4;
+  background: #f7f3eb;
 }
 
 
 .home .text-2 {
-  height: 43px;
+  height: 100%;
   top: 20px;
   left: 43px;
   text-shadow: 0px 4px 4px #00000040;
@@ -576,7 +589,12 @@ video {
   position: absolute;
   font-weight: 400;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0;
+}
+
+.home .text-2:hover {
+  color: gray;
 }
 
 /* Footer */
@@ -691,8 +709,8 @@ video {
   transition-duration: 0.25s;
 }
 
-.leer-m-s:hover {
-  color: #A0D0D4; 
+.home .leer-m-s:hover {
+  color: gray; 
 }
 
 .home .contacto {
@@ -764,23 +782,24 @@ video {
 
 .estilos-de-yoga .video {
   position: absolute;
-  width: 1195px;
+  width: 100%;
   height: 716px;
-  top: 174px;
-  left: 160px;
+  opacity: .8;
 }
 
 .estilos-de-yoga .overlap-2 {
   position: relative;
-  width: 1193px;
+  width: 100%;
   height: 716px;
-  border-radius: 20px;
   box-shadow: 0px 4px 4px #00000040;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .video-estudio {
-  border-radius: 20px;
   position: absolute;
   left: 0;
   top: 0;
@@ -792,10 +811,8 @@ video {
 
 .estilos-de-yoga .text-2 {
   width: 824px;
-  top: 299px;
-  left: 184px;
   font-size: 64px;
-  position: absolute;
+  position: relative;
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
   color: var(--creme);
@@ -806,55 +823,61 @@ video {
 }
 
 .estilos-de-yoga .logo {
-  position: absolute;
+  position: relative;
   width: 693px;
   height: 323px;
-  top: 121px;
-  left: 250px;
   object-fit: contain;
   z-index: 1;
+  opacity: 1;
 }
 
 .estilos-de-yoga .div-wrapper {
   width: 396px;
-  top: 395px;
-  left: 399px;
-  position: absolute;
+  position: relative;
   height: 84px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: var(--creme);
   transition-property: background;
   transition-duration: 1s;
   z-index: 2;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .estilos-de-yoga .div-wrapper:hover {
-  background: #A0D0D4;
+  background: gray;
+  
 }
 
 .estilos-de-yoga .text-3 {
-  height: 43px;
-  top: 20px;
-  left: 49px;
+  height: 100%;
+  width: 100%;
   text-shadow: 0px 4px 4px #00000040;
   font-size: 30px;
   position: absolute;
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
-  color: #f7f3eb;
+  color: gray;
   text-align: center;
+  align-content: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.estilos-de-yoga .text-3:hover {
+  color: #F3F3F3;
 }
 
 /* Estilos de yoga   */
 
 .estilos-de-yoga .div {
   position: absolute;
-  width: 1434px;
+  width: 100%;
   height: 886px;
-  top: 1009px;
+  top: 850px;
   left: 39px;
 }
 
@@ -881,17 +904,17 @@ video {
   content: "Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum nostra quis pellentesque metus quisque nullam.";
   border-radius: 20px;;
   font-family: "Malayalam MN-Regular", Helvetica;
-  color: #f7f3eb;
+  color: gray;
   margin: 20px;
   padding: 20px 40px;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: #f7f3eb;
   position: absolute;
   inset: 0;
   display: grid;
   place-items: center;
   transform: translatey(100%);
   transition: 0.4s;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 .estilos-de-yoga .overlap-group-wrapper.overlap-group-wrapper:hover::after {
@@ -974,7 +997,7 @@ video {
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Bold", Helvetica;
   font-weight: 400;
-  color: var(--lilac);
+  color: gray;
   font-size: 50px;
   text-align: center;
   letter-spacing: 0;
@@ -992,19 +1015,19 @@ video {
   height: 84px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: gray;
   transition-property: background;
   transition-duration: 1s;
   z-index: 1;
 }
 
 .boton-lila:hover {
-  background: #A0D0D4;
+  background: #f7f3eb;
 }
 
 
 .estilos-de-yoga .text {
-  height: 43px;
+  height: 100%;
   top: 20px;
   left: 34px;
   text-shadow: 0px 4px 4px #00000040;
@@ -1014,15 +1037,20 @@ video {
   font-weight: 400;
   color: #f7f3eb;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.estilos-de-yoga .text:hover {
+  color:gray;
 }
 
 /* frase */ 
 
 .estilos-de-yoga .overlap-3 {
   position: absolute;
-  width: 1516px;
+  width: 100%;
   height: 1620px;
   top: 1994px;
   left: -1px;
@@ -1030,7 +1058,7 @@ video {
 
 .estilos-de-yoga .frase {
   position: absolute;
-  width: 1514px;
+  width: 100%;
   height: 717px;
   top: 0;
   left: 0;
@@ -1064,7 +1092,7 @@ video {
 
 .estilos-de-yoga .precios {
   position: absolute;
-  width: 1516px;
+  width: 100%;
   height: 907px;
   top: 713px;
   left: 0;
@@ -1128,11 +1156,17 @@ video {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-content: space-around;
   gap: 23px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  border-radius: 5%;
+  background-color:#f7f3eb;
+  box-shadow: 0px 4px 4px #00000040;
+  opacity: 90%;
+  padding:30px;
 }
 
 .estilos-de-yoga .text-wrapper-7 {
@@ -1155,7 +1189,7 @@ video {
   height: 83px;
   font-family: "Malayalam MN-Bold", Helvetica;
   font-weight: 700;
-  color: var(--sinbad);
+  color: gray;
   font-size: 100px;
   letter-spacing: 0;
   line-height: normal;
@@ -1177,31 +1211,32 @@ video {
 .estilos-de-yoga .boton-lila-2 {
   position: relative;
   width: 294px;
-  height: 84px;
+  height: 60px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(195, 167, 205) 60%, rgb(224, 209, 230) 100%);
+  background: gray;
   transition-property: background;
   transition-duration: 1s;
   z-index: 1;
+  display: flex;
 }
 
 .boton-lila-2:hover {
-  background: #A0D0D4;
+  background: linear-gradient(180deg, rgb(224, 209, 230) 0%, rgb(195, 167, 205) 60%);
 }
 
 
 .estilos-de-yoga .text-4 {
   position: absolute;
-  height: 43px;
-  top: 20px;
-  left: 82px;
+  height: 100%;
+  width:100%;
   text-shadow: 0px 4px 4px #00000040;
   font-family: "Malayalam MN-Regular", Helvetica;
   font-weight: 400;
   color: #f7f3eb;
   font-size: 30px;
   text-align: center;
+  align-content: center;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -1326,7 +1361,7 @@ video {
 }
 
 .leer-m-s:hover {
-  color: #A0D0D4; 
+  color: gray; 
 }
 
 .estilos-de-yoga .contacto {
