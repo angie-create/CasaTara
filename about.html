@@ -5,22 +5,28 @@
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styleguide.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="estilos-de-yoga">
     <!-- Navigation Bar  --> 
-      <header class="header">
-        <a href="./index.html"><div class="logo-2"></div> </a>
-        <nav class="nav-bar" id="nav-bar">
-            <ol class="frame-2">
-              <li><a class="texto" href="#nav-bar">Acerca de</a></li>
-              <li><a class="texto" href="#footer">Horarios</a></li>
-              <li><a class="texto" href="#precios">Precios</a></li>
-              <li><a class="texto" href="#footer">Contacto</a></li>
-            </ol>
-        </nav>
-      </header> 
+      <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="./index.html">
+          <div class="logo-2"></div>
+        </a>
+        <ol class="frame-2">
+          <li><a class="texto" href="about.html">Acerca de</a></li>
+          <li><a class="texto" href="#footer">Horarios</a></li>
+          <li><a class="texto" href="./about.html#precios">Precios</a></li>
+          <li><a class="texto" href="#footer">Contacto</a></li>
+        </ol> 
+      </nav> 
     <!-- Virtual Tour -->
+      <section class="content">
         <img class="up-mandala" src="./img/upmandala.png" />
         <section class="video">
           <video class="video-estudio" src="./img/estudio_casatara.mp4" autoplay="true" muted="true" loop="true" poster="./img/estudio_casatara.mp4"></video>
@@ -300,6 +306,7 @@
             <div class="text-wrapper-5">Contacto</div>
           </div>
         </footer>
+      </section>
       </div>
       <script src="./script.js"></script>
   </body>

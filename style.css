@@ -1,4 +1,14 @@
-.home {
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  
+}
+
+
+.content {
   position: relative;
   width: 100%;
   background-color: var(--creme);
@@ -8,63 +18,122 @@
   overflow:hidden;
 }
 
+
 /* Navigation Bar */
 
-.header {
+nav {
   background: linear-gradient(180deg, rgb(224, 209, 230) 0%, rgb(195, 167, 205) 60%);
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 85px;
-  padding: 5px 10px;
+  width: 100%;
   z-index: 3;
   opacity: 0.85;
 }
 
 .header .logo-2 {
-  cursor: pointer;
+  position:absolute;
+  padding: 20px 50px;
+  background-image: url(./img/ellipse-3.png);
   height:70px;
   width: 70px;
-  left: 60px;
   border-radius: 50%;
   transition: all 0.3s;
-  background-image: url(./img/ellipse-3.png);
+  cursor: pointer;
   background-size: cover;
   background-position: 50% 50%;
+  opacity: 1;
+  z-index: 2;
 }
 
 .header .logo-2:hover {
   transform: scale(1.2);
 }
 
-.header .frame-2 {
-  list-style: none;
+nav ol {
+  float: right;
+  margin-right: 20px;
 }
 
-.header .frame-2 li {
+nav ol li {
   display: inline-block;
-  padding: 0 20px;
-  transition: all 0.3s;
-  opacity: 1;
-  
+  line-height: 85px;
+  margin: 0 5px;
 }
 
-.header .frame-2 li:hover {
+nav ol li a {
+  color: #F3F3F3;
+  font-size: 18px;
+  padding: 7px 13px;
+  transition: all 0.5s;
+  font-family: "Malayalam MN-Regular";
+  font-style: bold;
+}
+
+nav ol li:hover, nav ol li.active {
   transform: scale(1.3);
 }
 
-.header .frame-2 li a:hover {
+li a.active, li a:hover {
   color: white;
 }
 
-.header .frame-2 li a{
-  font-size: 800;
-  color: #F3F3F3;
-  text-decoration: none;
-  font-family: "Malayalam MN-Regular";
-  font-style: bold;
+.checkbtn {
+  font-size: 30px;
+  color:#ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/*
+@media (max-width: 952px) {
+
+}
+*/
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+    z-index: 3;
+  }
+  .frame-2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#f7f3eb;
+    top: 85px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 3;
+  }
+
+  .frame-2 li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    z-index: 3;
+  }
+
+  .frame-2 li a {
+    font-size: 20px;
+    z-index: 3;
+  }
+
+  .frame-2 li a:hover, .frame-2 li a.active {
+    background: none;
+    color: red;
+  }
+
+  #check:checked ~ .frame-2 {
+    left: 0;
+  }
+
 }
 
 
