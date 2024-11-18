@@ -1,3 +1,4 @@
+/*
 const buttonElement1 = document.getElementById('estilo1');
 const pElement1 = document.getElementById('info-estilo1');
 
@@ -47,3 +48,103 @@ buttonElement5.addEventListener('click', () => {
 buttonElement6.addEventListener('click', () => {
     toggleHiddenElement(pElement6);
 });
+
+*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo1');
+    const closeBtn = document.querySelector('#cerrar-overlay1');
+    const overlay = document.querySelector('#info-estilo1');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo2');
+    const closeBtn = document.querySelector('#cerrar-overlay2');
+    const overlay = document.querySelector('#info-estilo2');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo3');
+    const closeBtn = document.querySelector('#cerrar-overlay3');
+    const overlay = document.querySelector('#info-estilo3');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo4');
+    const closeBtn = document.querySelector('#cerrar-overlay4');
+    const overlay = document.querySelector('#info-estilo4');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo5');
+    const closeBtn = document.querySelector('#cerrar-overlay5');
+    const overlay = document.querySelector('#info-estilo5');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('#estilo6');
+    const closeBtn = document.querySelector('#cerrar-overlay6');
+    const overlay = document.querySelector('#info-estilo6');
+
+    openBtn.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })   
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openVideo = document.querySelector('#open-video');
+    const closeVideo = document.querySelector('#video-CasaTara');
+    const overlay = document.querySelector('#video-CasaTara');
+
+    openVideo.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    })
+
+    closeVideo.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    })
+})
