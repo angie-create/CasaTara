@@ -99,7 +99,7 @@ li a.active, li a:hover {
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
-    z-index: 3;
+    z-index: 4;
   }
   .frame-2 {
     position: fixed;
@@ -110,30 +110,29 @@ li a.active, li a:hover {
     left: -100%;
     text-align: center;
     transition: all .5s;
-    z-index: 3;
+    z-index: 4;
   }
 
   .frame-2 li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
-    z-index: 3;
+    z-index: 4;
   }
 
   .frame-2 li a {
     font-size: 20px;
-    z-index: 3;
+    z-index: 4;
+    color: gray;
   }
 
   .frame-2 li a:hover, .frame-2 li a.active {
     background: none;
-    color: red;
   }
 
   #check:checked ~ .frame-2 {
     left: 0;
   }
-
 }
 
 
@@ -913,6 +912,7 @@ video {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 .estilos-de-yoga .div-wrapper:hover {
@@ -939,12 +939,7 @@ video {
   color: #F3F3F3;
 }
 
-#video-CasaTara {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
 
-}
 
 /* Estilos de yoga   */
 

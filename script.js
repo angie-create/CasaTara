@@ -135,16 +135,30 @@ document.addEventListener('DOMContentLoaded', () => {
     })   
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const openVideo = document.querySelector('#open-video');
-    const closeVideo = document.querySelector('#video-CasaTara');
-    const overlay = document.querySelector('#video-CasaTara');
+/* 
 
-    openVideo.addEventListener('click', () => {
-        overlay.style.display = 'block';
-    })
+var theVideo = document.getElementById('video-estudio'), theTxt = document.querySelector('.overlap-2');
 
-    closeVideo.addEventListener('click', () => {
-        overlay.style.display = 'none';
-    })
-})
+function vidPlay(){
+    theVideo.play();
+    theVideo.setAttribute('controls', 'controls');
+    theTxt.style.opacity = "0";
+    theTxt.style.transition = "all .5s";
+    theTxt.style.display = "none";
+}
+
+theVideo.onended = function(){
+    theTxt.style.opacity = "1";
+    theTxt.style.transition = "all .5s";
+    theTxt.style.display = "block";
+    theVideo.load();
+    theVideo.controls = false;
+}
+
+
+
+thevideo -> video 
+txt-cont -> overlap-2
+txt-video -> txt-video
+
+*/
